@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndPing</string>
+    <string name="tab_words">Words</string>
+    <string name="tab_numbers">Numbers</string>
+    <string name="tab_ping">Ping</string>
+    <string name="tab_lookup">DNS Lookup</string>
+    <string name="tab_trace">Trace Route</string>
+</resources>

@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+	 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible" />
+
+ <SeekBar
+     android:id="@+id/seekTimes"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_below="@+id/txAddress"
+     android:max="100"
+     android:progress="5" />
+
+ <Button
+     android:id="@+id/btPing"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_below="@+id/seekTimes"
+     android:layout_marginLeft="19dp"
+     android:text="Ping" />
+
+ <Button
+     android:id="@+id/btStop"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_above="@+id/scrollView1"
+     android:layout_marginLeft="22dp"
+     android:layout_toRightOf="@+id/btPing"
+     android:text="Stop" />
+ 
+ <ScrollView
+     android:id="@+id/scrollView1"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_below="@+id/btPing"
+     android:background="#000000"
+     android:fillViewport="true" >
+
+     <TextView
+         android:id="@+id/txResult"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="#000000"
+         android:textColor="#ffffff"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="5dp"
+         android:layout_marginTop="5dp"
+
+         />
+
+ </ScrollView>
+
+ <TextView
+     android:id="@+id/txAddress"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBaseline="@+id/edAddress"
+     android:layout_alignBottom="@+id/edAddress"
+     android:layout_alignParentLeft="true"
+     android:text="Address"
+     android:textAppearance="?android:attr/textAppearanceMedium" />
+
+ <EditText
+     android:id="@+id/edAddress"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"
+     android:layout_toRightOf="@+id/btPing"
+     android:ems="10" />
+
+ <TextView
+     android:id="@+id/txPackets"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_above="@+id/btStop"
+     android:layout_centerHorizontal="true"
+     android:text="5 Packet" />
+
+
+
+</RelativeLayout>
